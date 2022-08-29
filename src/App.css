@@ -1,0 +1,7 @@
+.App {
+    font-family: 'SimKyungha';
+}
+@font-face {
+    font-family: 'SimKyungha';
+    src:url(/src/asset/font/SimKyungha.ttf);
+}
