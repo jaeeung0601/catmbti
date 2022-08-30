@@ -3,9 +3,10 @@ import Button from 'react-bootstrap/Button'
 const {Kakao} = window;
 
 const KakaoShareButton = ({data}) =>{
-    const url = "https://catmbtichoi.netlify.app/"
+    const url = "https://catmbtichoi.netlify.app /"
     const resultUrl = window.location.href;
     console.log('data',data)
+    console.log('aaa',resultUrl,url)
     React.useEffect(()=>{
         Kakao.cleanup()
         Kakao.init("1b4c9d5e78a3eeb164d2cdbcf8c1909b")
@@ -34,6 +35,6 @@ const KakaoShareButton = ({data}) =>{
           ]
       });
     }
-    return(<Button onClick={shareKakao} style={{marginLeft:10}}>카카오톡 공유하기</Button>)
+    return(<Button style={{marginLeft:10}} onClick={shareKakao}>카카오톡 공유하기</Button>)
 }
 export default KakaoShareButton
