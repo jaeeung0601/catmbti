@@ -5,7 +5,6 @@ const {Kakao} = window;
 const KakaoShareButton = ({data}) =>{
     const url = "https://catmbtichoi.netlify.app"
     const resultUrl = window.location.href;
-    console.log('data',data)
     console.log('aaa',resultUrl,url)
     React.useEffect(()=>{
         Kakao.cleanup()
@@ -35,6 +34,6 @@ const KakaoShareButton = ({data}) =>{
           ]
       });
     }
-    return(<Button style={{marginLeft:10}} onClick={shareKakao}>카카오톡 공유하기</Button>)
+    return(<Button onClick={shareKakao} style={{marginLeft:10}}>카카오톡 공유하기</Button>)
 }
 export default KakaoShareButton
