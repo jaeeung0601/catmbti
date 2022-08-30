@@ -5,6 +5,7 @@ const {Kakao} = window;
 const KakaoShareButton = ({data}) =>{
     const url = "https://catmbtichoi.netlify.app"
     const resultUrl = window.location.href;
+    console.log('data',data)
     console.log('aaa',resultUrl,url)
     React.useEffect(()=>{
         Kakao.cleanup()
