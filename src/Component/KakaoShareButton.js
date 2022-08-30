@@ -9,7 +9,7 @@ const KakaoShareButton = ({data}) =>{
     console.log('aaa',resultUrl,url)
     React.useEffect(()=>{
         Kakao.cleanup()
-        Kakao.init("1b4c9d5e78a3eeb164d2cdbcf8c1909b")
+        Kakao.init("273dda4e026cb384898a183fcdd4c678")
         console.log(Kakao.isInitialized)
     },[])
     const shareKakao = () =>{
