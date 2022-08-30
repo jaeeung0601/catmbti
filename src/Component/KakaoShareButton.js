@@ -3,10 +3,9 @@ import Button from 'react-bootstrap/Button'
 const {Kakao} = window;
 
 const KakaoShareButton = ({data}) =>{
-    const url = "https://catmbtichoi.netlify.app"
+    const url = "https://catmbtichoi.netlify.app/"
     const resultUrl = window.location.href;
     console.log('data',data)
-    console.log('aaa',resultUrl,url)
     React.useEffect(()=>{
         Kakao.cleanup()
         Kakao.init("1b4c9d5e78a3eeb164d2cdbcf8c1909b")
